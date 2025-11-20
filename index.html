@@ -28,7 +28,7 @@
                 <button class="notification-btn">
                     <i class="fas fa-bell"></i>
                 </button>
-                <button class="signin-btn">SIGN IN</button>
+                <a href="signup.html" class="signin-btn" style="text-decoration:none;display:inline-block">SIGN IN</a>
                 <button class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -60,12 +60,12 @@
             </p>
             
             <div class="hero-buttons">
-                <button class="watch-now-btn">
+                <a href="signup.html" class="watch-now-btn" style="text-decoration:none">
                     <i class="fas fa-play"></i> WATCH NOW
-                </button>
-                <!-- <button class="watch-trailer-btn">
+                </a>
+                <button class="watch-trailer-btn">
                     <i class="fas fa-plus"></i> Watch Trailer
-                </button> -->
+                </button>
             </div>
         </div>
     </section>
@@ -75,7 +75,7 @@
         <div class="details-container">
             <div class="movie-poster">
                 <img src="Images/second.png" alt="Luli & Goni Lemes Movie Poster">
-                <button class="watch-now-btn-poster">WATCH NOW</button>
+                <a href="signup.html" class="watch-now-btn-poster" style="text-decoration:none;display:block;text-align:center">WATCH NOW</a>
                 <button class="watch-trailer-btn-poster">WATCH TRAILER</button>
             </div>
             
@@ -201,5 +201,29 @@
         </div>
     </footer>
     
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+        
+        // Close menu when clicking on a link
+        const menuLinks = document.querySelectorAll('.nav-menu a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

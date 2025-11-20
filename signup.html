@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign In - Krijo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{font-family:'Poppins',sans-serif;background:#121212;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px}
+    .card{background:#111;padding:40px;border-radius:20px;width:100%;max-width:420px;color:#fff;box-shadow:0 20px 60px rgba(0,0,0,0.5);position:relative}
+    .close{position:absolute;right:24px;top:20px;color:#999;font-size:24px;cursor:pointer;transition:color 0.3s}
+    .close:hover{color:#E50916}
+    h2{text-align:center;margin:0 0 24px;font-size:26px;font-weight:600}
+    h2::after{content:'';display:block;width:60px;height:3px;background:#E50916;margin:12px auto 0}
+    .field{margin:16px 0}
+    input{width:100%;padding:16px 20px;border-radius:50px;background:transparent;border:2px solid #444;color:#fff;font-size:15px;transition:border-color 0.3s}
+    input:focus{outline:none;border-color:#666}
+    input::placeholder{color:#666}
+    .btn-red{width:100%;padding:16px;border-radius:50px;border:none;background:linear-gradient(180deg,#E50916 0%,#780108 100%);color:#fff;font-weight:600;box-shadow:0 10px 30px rgba(229,9,22,0.4);cursor:pointer;margin-top:20px;font-size:16px;transition:transform 0.3s,box-shadow 0.3s}
+    .btn-red:hover{transform:scale(1.02);box-shadow:0 12px 35px rgba(229,9,22,0.6)}
+    p.small{color:#bdbdbd;text-align:center;margin-top:16px;font-size:14px}
+    p.small a{color:#E50916;text-decoration:none;transition:color 0.3s}
+    p.small a:hover{color:#ff1744}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="close">✕</div>
+    <h2>SIGN IN</h2>
+    <div class="field"><input type="email" placeholder="Enter Your Email"></div>
+    <div class="field"><input type="password" placeholder="Enter Your Password"></div>
+    <button class="btn-red">Sign In</button>
+    <p class="small">Forgot Password? <a href="#">Reset Now</a></p>
+    <p class="small">Don't have any account? <a href="#">Signup Now</a></p>
+  </div>
+</body>
+</html>

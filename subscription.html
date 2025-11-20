@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Subscription - Krijo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{font-family:'Poppins',sans-serif;background:#121212;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px}
+    .card{background:#111;padding:40px;border-radius:20px;width:100%;max-width:480px;color:#fff;box-shadow:0 20px 60px rgba(0,0,0,0.5);position:relative}
+    .close{position:absolute;right:24px;top:20px;color:#999;font-size:24px;cursor:pointer;transition:color 0.3s}
+    .close:hover{color:#E50916}
+    h2{margin:0 0 8px;font-size:18px;font-weight:500;color:#999}
+    .price{font-size:36px;font-weight:700;margin-bottom:20px;color:#fff}
+    .field{margin:16px 0}
+    .field label{display:block;margin-bottom:6px;color:#999;font-size:14px}
+    input{width:100%;padding:16px 20px;border-radius:50px;background:transparent;border:2px solid #444;color:#fff;font-size:15px;transition:border-color 0.3s}
+    input:focus{outline:none;border-color:#666}
+    input::placeholder{color:#666}
+    .btn-red{width:100%;padding:16px;border-radius:50px;border:none;background:linear-gradient(180deg,#E50916 0%,#780108 100%);color:#fff;font-weight:600;box-shadow:0 10px 30px rgba(229,9,22,0.4);cursor:pointer;margin-top:20px;font-size:16px;transition:transform 0.3s,box-shadow 0.3s}
+    .btn-red:hover{transform:scale(1.02);box-shadow:0 12px 35px rgba(229,9,22,0.6)}
+    p.small{color:#999;text-align:center;margin-top:16px;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="close">✕</div>
+    <h2>Total Amount</h2>
+    <div class="price">€12.99</div>
+    <div class="field">
+      <label>Email Address *</label>
+      <input type="email" placeholder="username@email.com">
+    </div>
+    <div class="field">
+      <label>Full Name *</label>
+      <input type="text" placeholder="John Doe">
+    </div>
+    <button class="btn-red">Proceed to checkout</button>
+    <p class="small">The safer, easier way to pay</p>
+  </div>
+</body>
+</html>

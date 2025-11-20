@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout - Krijo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{font-family:'Poppins',sans-serif;background:#121212;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:20px}
+    .card{background:#111;padding:40px;border-radius:20px;width:100%;max-width:580px;color:#fff;box-shadow:0 20px 60px rgba(0,0,0,0.5);position:relative}
+    .close{position:absolute;right:24px;top:20px;color:#999;font-size:24px;cursor:pointer;transition:color 0.3s}
+    .close:hover{color:#E50916}
+    h2{margin:0 0 8px;font-size:24px;font-weight:600}
+    h2::after{content:'';display:block;width:50px;height:3px;background:#E50916;margin-top:8px}
+    .cards{margin:16px 0 20px;display:flex;gap:8px}
+    .cards img{height:32px;width:auto}
+    .field{margin:14px 0}
+    input{width:100%;padding:16px 20px;border-radius:50px;background:transparent;border:2px solid #444;color:#fff;font-size:15px;transition:border-color 0.3s}
+    input:focus{outline:none;border-color:#666}
+    input::placeholder{color:#666}
+    .btn-red{width:100%;padding:16px;border-radius:50px;border:none;background:linear-gradient(180deg,#E50916 0%,#780108 100%);color:#fff;font-weight:600;box-shadow:0 10px 30px rgba(229,9,22,0.4);cursor:pointer;margin-top:20px;font-size:16px;transition:transform 0.3s,box-shadow 0.3s}
+    .btn-red:hover{transform:scale(1.02);box-shadow:0 12px 35px rgba(229,9,22,0.6)}
+    .row{display:flex;gap:12px}
+    .row .field{flex:1}
+    .cvv-field{width:140px;flex:none}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="close">✕</div>
+    <h2>Setup your credit or debit card</h2>
+    <div class="cards">
+      <img src="Images/visa.png" alt="Visa">
+      <img src="Images/mastercard.png" alt="Mastercard">
+      <img src="Images/paypal.png" alt="PayPal">
+    </div>
+    <div class="field"><input type="text" placeholder="Card Number" maxlength="19"></div>
+    <div class="row">
+      <div class="field"><input type="text" placeholder="Expiration Date" maxlength="5"></div>
+      <div class="field cvv-field"><input type="text" placeholder="CVV" maxlength="4"></div>
+    </div>
+    <div class="field"><input type="text" placeholder="Name on Card"></div>
+    <div class="field"><input type="text" placeholder="ZIP code" maxlength="10"></div>
+    <button class="btn-red">Checkout</button>
+  </div>
+</body>
+</html>
