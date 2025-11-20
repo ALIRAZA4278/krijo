@@ -121,12 +121,12 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(229, 9, 22, 0.4);
+    box-shadow: 0 8px 20px rgba(229, 9, 22, 0.25);
 }
 
 .signin-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 25px rgba(229, 9, 22, 0.6);
+    box-shadow: 0 10px 30px rgba(229, 9, 22, 0.35);
 }
 
 .menu-toggle {
@@ -353,12 +353,12 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    box-shadow: 0 4px 15px rgba(229, 9, 22, 0.4);
+    box-shadow: 0 8px 20px rgba(229, 9, 22, 0.25);
 }
 
 .watch-now-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 25px rgba(229, 9, 22, 0.6);
+    box-shadow: 0 10px 30px rgba(229, 9, 22, 0.35);
 }
 
 .watch-trailer-btn {
@@ -489,12 +489,12 @@ body {
     margin-top: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     letter-spacing: 1.5px;
-    box-shadow: 0 4px 15px rgba(229, 9, 22, 0.4);
+    box-shadow: 0 8px 20px rgba(229, 9, 22, 0.25);
 }
 
 .watch-now-btn-poster:hover {
     transform: scale(1.02);
-    box-shadow: 0 6px 25px rgba(229, 9, 22, 0.6);
+    box-shadow: 0 10px 30px rgba(229, 9, 22, 0.35);
 }
 
 .watch-trailer-btn-poster {
@@ -925,12 +925,12 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(229, 9, 22, 0.4);
+    box-shadow: 0 8px 20px rgba(229, 9, 22, 0.25);
 }
 
 .subscribe-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 25px rgba(229, 9, 22, 0.6);
+    box-shadow: 0 10px 30px rgba(229, 9, 22, 0.35);
 }
 
 .footer-social {
